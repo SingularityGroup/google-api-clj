@@ -6,11 +6,12 @@ Singularity group fork of https://github.com/viebel/google-api-clj
 
 The original repo is a bit older.
 The ecosystem is moving towards builtin tooling.
+Also I wanted to try make this lib compatible with graalvm.
 
 ## todo
 
 - [x] Move to deps.edn
-- [x] Fix core functions override warns
+- [x] Fix core functions override warns from clojure 10.11
 - [ ] Get rid of reflection
 - [ ] Do not initialize classes, if building for graalvm
 - [ ] Achieve graalvm compatibility
@@ -18,9 +19,29 @@ The ecosystem is moving towards builtin tooling.
 
 ## Usage
 
+add deps:
 
-https://github.com/SingularityGroup/google-api-clj.git
 
+        viebel/google-api-clj
+        {:git/sha "47fd758f" :git/url "git@github.com:SingularityGroup/google-api-clj.git"}
+
+
+```clojure
+(def credential-path "<path-to-google-api-creds>.json")
+
+(def google-client (create-google-client {:credential-path credential-path
+                                            :scopes [:drive :spreadsheets]
+                                            :application-name ""}))
+
+  (def sheets-service (sheets/make-service google-client))
+
+(def my-spreadheet (sheets/create-spreadsheet
+                      {:service sheets-service}
+                      {:spreadsheet-properties/title "Showtime! repl test"}
+                      [{:sheet-properties/title "Code bold!"}]))
+```
+
+check the api namespaces + the google api docs.
 
 
 ## License
