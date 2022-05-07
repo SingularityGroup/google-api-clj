@@ -1,10 +1,27 @@
 # google-api-clj
 
-A Clojure library designed to ... well, that part is up to you.
+Singularity group fork of https://github.com/viebel/google-api-clj
+
+## reasoning
+
+The original repo is a bit older.
+The ecosystem is moving towards builtin tooling.
+
+## todo
+
+- [x] Move to deps.edn
+- [x] Fix core functions override warns
+- [ ] Get rid of reflection
+- [ ] Do not initialize classes, if building for graalvm
+- [ ] Achieve graalvm compatibility
+
 
 ## Usage
 
-FIXME
+
+https://github.com/SingularityGroup/google-api-clj.git
+
+
 
 ## License
 
