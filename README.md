@@ -22,8 +22,10 @@ Also I wanted to try make this lib compatible with graalvm.
 add deps:
 
 
+```clojure
         viebel/google-api-clj
         {:git/sha "47fd758f" :git/url "git@github.com:SingularityGroup/google-api-clj.git"}
+```
 
 
 ```clojure
@@ -33,7 +35,7 @@ add deps:
                                             :scopes [:drive :spreadsheets]
                                             :application-name ""}))
 
-  (def sheets-service (sheets/make-service google-client))
+(def sheets-service (sheets/make-service google-client))
 
 (def my-spreadheet (sheets/create-spreadsheet
                       {:service sheets-service}
