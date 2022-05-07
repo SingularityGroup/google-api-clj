@@ -1,0 +1,8 @@
+{:paths ["src" "resources" "test"],
+ :deps {com.taoensso/timbre {:mvn/version "5.2.1"}
+        com.google.api-client/google-api-client {:mvn/version "1.32.1"},
+        com.google.http-client/google-http-client-jackson2 {:mvn/version "1.39.2"},
+        com.google.oauth-client/google-oauth-client-jetty {:mvn/version "1.28.0"},
+        com.google.apis/google-api-services-sheets {:mvn/version "v4-rev20190109-1.28.0"},
+        com.google.apis/google-api-services-drive {:mvn/version "v3-rev20181213-1.28.0"}},
+ :aliases {}}
