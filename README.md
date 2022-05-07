@@ -24,7 +24,8 @@ add deps:
 
 ```clojure
         viebel/google-api-clj
-        {:git/sha "47fd758f" :git/url "git@github.com:SingularityGroup/google-api-clj.git"}
+        {:git/sha "328245bcfab3b46fa526de760e4182237ffd315f" :git/url "git@github.com:SingularityGroup/google-api-clj.git"}
+
 ```
 
 
