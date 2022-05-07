@@ -44,6 +44,7 @@ add deps:
                       [{:sheet-properties/title "Code bold!"}]))
 ```
 
+also check playground.clj in this repo for a super Rich comment.
 check the api namespaces + the google api docs.
 
 
